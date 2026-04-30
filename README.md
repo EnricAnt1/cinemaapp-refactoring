@@ -10,3 +10,4 @@ Aquest projecte consisteix en una aplicació desenvolupada en Java dissenyada pe
     Atenció al Client: Compta amb un apartat dedicat a la gestió de socis i serveis per a la comunitat d'usuaris.
     Reproducció Multidispositiu: El projecte està preparat per gestionar la visualització de contingut tant en entorns físics (projectors de cinema) com en entorns digitals (dispositius mòbils).
 Aquesta és la primera versió del projecte, on s'ha definit l'arquitectura de classes i les relacions bàsiques entre els components del sistema per garantir una base escalable i orientada a objectes.
+"Arquitectura MVC: Model, Vista, Controlador" 
