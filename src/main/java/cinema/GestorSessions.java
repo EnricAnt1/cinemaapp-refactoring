@@ -9,6 +9,7 @@ Sala sala = null;
 for (Sala s : sales) {
 if (s.getId() == idSala) { sala = s; break; }
 }
+//hola
 if (sala == null) return "Error: sala no trobada";
 if (!sala.isOperativa()) return "Error: sala no operativa";
 Film film = null;
