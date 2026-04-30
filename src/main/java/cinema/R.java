@@ -3,7 +3,7 @@ public class R {
 private ArrayList<int[]> ll = new ArrayList<>();
 public boolean proc(String t, int[] s, double pp) {
 if (t != null) {
-if (s != null && s.length > 0) {
+if (s != null && s.length > 0.0) {
 double tot = pp * s.length;
 if (t.equals("pe")) {
 tot = tot * 0.85;
@@ -26,3 +26,7 @@ return true;
 return false;
 }
 }
+
+
+
+
