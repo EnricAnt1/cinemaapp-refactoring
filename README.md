@@ -14,5 +14,10 @@ Aquesta és la primera versió del projecte, on s'ha definit l'arquitectura de c
 
 
 
+
 "Arquitectura en 3 capes: Presentació, Negoci, Dades"  "Arquitectura MVC: Model, Vista, Controlador" "Arquitectura MVC: Model, Vista, Controlador" 
+
+
+"Arquitectura en 3 capes: Presentació, Negoci, Dades" 
+"Arquitectura en 3 capes: Presentació, Negoci, Dades" 
 
