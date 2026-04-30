@@ -1,3 +1,4 @@
+
 1.)
 
 - Mala pràctica: Mètode massa llarg i fa massa coses
@@ -27,4 +28,19 @@
 - Mala pràctica: Barreja de lògica de negoci amb presentació
 - On: mètode programarSessio()
 - Patró de refacció suggerit: eparate Logic from Presentation: Eliminar els prints. La classe encarregada de la interfície d'usuari (o l'invocador del mètode) és qui hauria de gestionar com es mostra l'èxit de l'operació.
+
+#    MALA‌  PRACTICA             |      ON                  |   PATRO DE REFACCIÓ SUGGERIT
+
+1   Nom poc descriptius               Mètode proc
+                                    variables(t,s,pp,tot)       Rename
+                            
+2  Exces de condicionals             Mètode proc                Clàusules de guarda i retonrs rapids
+
+3  Ús de números magics              Mètode proc                Utilitzar constants
+
+4  Principi de Responsabilitat       Mètode proc                Separar el càlcul del preu, la impressió
+    unica                                                       i l'emmagatzematge
+    
+5   Lògica condicionada per           Mètode proc               Utilitzar el patró Strategy
+    un String                           
 
