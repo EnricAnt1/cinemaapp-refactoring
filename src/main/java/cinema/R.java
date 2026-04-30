@@ -10,22 +10,24 @@ public class GestorReserves {
     private static final int MINIM_GRUP_PE = 8;
 
     private ArrayList<int[]> reserves = new ArrayList<>();
-    
 
     public boolean reservar(TipusReserva tipus, int[] seients, double preuPerSeient) {
-        if (tipus != null) {
-            if (seients != null && seients.length > 0) {
-                
-                double total = calcularTotal(tipus, seients.length, preuPerSeient);
-                
-                if (total > 0) {
-                    mostrarResum(tipus, seients.length, total);
-                    registrarReserva(seients);
-                    return true;
-                }
-            }
+        
+        if (tipus == null || seients == null || seients.length == 0) {
+            return false;
         }
-        return false;
+
+        double total = calcularTotal(tipus, seients.length, preuPerSeient);
+        
+        if (total <= 0) {
+            return false;
+        }
+
+        // Happy Path
+        mostrarResum(tipus, seients.length, total);
+        registrarReserva(seients);
+        
+        return true;
     }
 
     private double calcularTotal(TipusReserva tipus, int numSeients, double preuPerSeient) {
