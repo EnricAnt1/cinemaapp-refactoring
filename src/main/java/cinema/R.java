@@ -23,7 +23,6 @@ public class GestorReserves {
             return false;
         }
 
-        // Happy Path
         mostrarResum(tipus, seients.length, total);
         registrarReserva(seients);
         
